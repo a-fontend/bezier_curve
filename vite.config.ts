@@ -7,7 +7,7 @@ import pkg from "./package.json";
 export default defineConfig({
   base:
     process.env.NODE_ENV !== "development"
-      ? `https://little-frontend.github.io/${pkg.name}/`
+      ? `https://${pkg.author}.github.io/${pkg.name}/`
       : "/",
   plugins: [vue()],
 });
